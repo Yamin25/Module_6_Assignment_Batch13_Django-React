@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Abdullah Al M. - Personal Profile</title>
+</head>
+<body>
+
+    <!-- 6. Semantic: header, nav -->
+    <header>
+        <h1>Abdullah Al M.</h1>
+        <p>Hello! I am a Computer Science graduate learning HTML.</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#form">Form</a> |
+        <a href="#table">Academics</a> |
+        <a href="#media">Media</a>
+    </nav>
+
+    <main>
+
+        <!-- 1. Heading + paragraph about myself + 2. Text formatting -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                My name is <b>Abdullah Al M.</b> I am a <i>Computer Science graduate</i> from
+                Leeds Trinity University, UK. I enjoy <u>gardening, gliding, and swimming</u>,
+                and my favourite web topic is <mark>semantic HTML</mark>.
+            </p>
+        </section>
+
+        <!-- 3. Form -->
+        <section id="form">
+            <h2>Contact Form</h2>
+            <form>
+                <label>Name: <input type="text" name="name"></label><br><br>
+
+                <label>Email: <input type="email" name="email"></label><br><br>
+
+                <label>Password: <input type="password" name="password"></label><br><br>
+
+                <p>Gender:</p>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label><br><br>
+
+                <p>Hobbies:</p>
+                <label><input type="checkbox" name="hobby" value="gardening"> Gardening</label>
+                <label><input type="checkbox" name="hobby" value="gliding"> Gliding</label>
+                <label><input type="checkbox" name="hobby" value="swimming"> Swimming</label><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- 4. Table: header + 3 data rows = 4 rows, 4 columns -->
+        <section id="table">
+            <h2>Academic Information</h2>
+            <table border="1">
+                <tr>
+                    <th>Qualification</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                    <th>Result</th>
+                </tr>
+                <tr>
+                    <td>BSc in Computer Science</td>
+                    <td>Leeds Trinity University, UK</td>
+                    <td>2023</td>
+                    <td>Second Class</td>
+                </tr>
+                <tr>
+                    <td>HND in Computing and System Development</td>
+                    <td>BAC</td>
+                    <td>—</td>
+                    <td>Pass</td>
+                </tr>
+                <tr>
+                    <td>Upper Secondary (HSC)</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- 5. Multimedia: image + video (nature) -->
+        <section id="media">
+            <h2>Multimedia</h2>
+
+            <img src="https://picsum.photos/200/150?nature" alt="Nature scenery" width="200">
+
+            <br><br>
+
+            <video width="320" height="180" controls>
+                <source src="https://cdn.pixabay.com/video/2023/10/22/186115-877653483_large.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p><small>A short nature clip — forests, mountains and water.</small></p>
+        </section>
+
+        <!-- 7. Interactive: details/summary + button -->
+        <section>
+            <h2>More Info</h2>
+
+            <details>
+                <summary>Click to see a fun fact</summary>
+                <p>I love gardening, gliding, and swimming, and I enjoy learning new web technologies!</p>
+            </details>
+
+            <br>
+
+            <button onclick="alert('Hello! Thanks for clicking.')">Click Me</button>
+        </section>
+
+    </main>
+
+    <!-- 6. Semantic: footer -->
+    <footer>
+        <p>© 2026 Abdullah Al M. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
